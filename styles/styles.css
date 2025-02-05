@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+}
+
+
+.game-container {
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.color-box {
+
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+
+    color: #00796b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-box.correct {
+
+    transform: scale(1.2);
+    border: 3px solid limegreen;
+}
+
+.color-options {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 20PX;
+}
+
+.color-options button {
+
+    width: 150px;
+    height: 100px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease, background-color 0.5s ease-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.color-options button:hover {
+
+    transform: translateY(-5px);
+}
+
+.color-options button.revealed {
+    color: white;
+}
+
+
+@keyframes pulse {
+    
+    from {
+        transform: scale(1.2);
+    }to {
+        transform: scale(1.25);
+    }
+}
+
+
+@keyframes shake {
+
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    100% {transform: translateX(0);}
+    
+}
+
+.game-status {
+
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.Reset-game-btn {
+
+    margin-top: 15px;
+    padding: 13px 30px;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.Reset-game-btn:hover {
+
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: whitesmoke;
+    transform: translateY(-3px);
+}
+
+.Reset-game-btn:active {
+    transform: translateY(1px);
+}
+
+.score-board {
+    font-size: 1rem;
+    color: #333
+}
+
+/* in small screens we want the buttons to be rounded*/
+
+@media (max-width: 480px) {
+    
+        .game-container {
+
+            width: 90%;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            background-color: ;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-options button {
+
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+        }
+}
+
+@media (max-width: 768px) {
+
+    
+    .game-container {
+
+        width: 90%;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 400px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .color-options button {
+
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        
+    }
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG12 stage 1 color guess game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <div class="game-container">
+        
+        <h2 data-testid="gameInstruction">
+            Guess the color that matches the color in the box below
+        </h2>
+
+        <div class="color-box" data-testid="colorBox"></div>
+
+        <div class="color-options js-color-options" data-testid="color-options"></div>
+
+        <p class="game-status" data-testid="gameStatus">correct</p>
+
+        <p class="score-board" data-testid="scoreBoard"></p>
+
+        <button class="Reset-game-btn" data-testid="resetGameButton">Reset Game</button>
+
+    </div>
+
+    <script src="scripts/boxGame.js"></script>
+
+</body>
+</html>
