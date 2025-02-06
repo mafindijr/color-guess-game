@@ -1,2 +1,3 @@
 This is a color guessing game. its fun good GUI and also responsive 
 its my stage 1 task at HNG 12 cohort...
+check it out https://abdul-color-guess-game.netlify.app
