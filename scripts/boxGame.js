@@ -46,7 +46,7 @@ function setNewGame () {
 
         colorBox.style.backgroundColor = targetColor;
 
-        // looping through the colors array
+        // looping through the colors array to generate buttons and their data test id's 
 
         colors.forEach((color) => {
 
@@ -58,7 +58,8 @@ function setNewGame () {
 
                 button.addEventListener('click', () => handleColorGuess(button));
 
-              colorOptContainer.appendChild(button);
+   // rendering the buttons options
+        colorOptContainer.appendChild(button);
             });
 
 }
