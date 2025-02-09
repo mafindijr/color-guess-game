@@ -1,6 +1,7 @@
 This is a color guessing game. its fun good GUI and also responsive 
 its my stage 1 task at HNG 12 cohort...
-at big screens the color options buttons are display in a box shapes
+
+for big screens the color options buttons are display in a box shapes
 
 for mobile it's display rounded.
 
